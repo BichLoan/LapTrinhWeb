@@ -25,13 +25,13 @@
 	$username = "root";
 	$password = "";
 	$host = "localhost";
-	$database = "demo";
+	$database = "sinhvien";
 	$connection = mysql_connect($host, $username, $password);
 	mysql_select_db($database, $connection);
 	mysql_query("SET NAMES 'UTF8'");
 	$sql = "SELECT * 
-			FROM employees
-			WHERE firstName='".$cookie_name."' and employeeNumber = '".$cookie_pass."'
+			FROM students
+			WHERE name='".$cookie_name."' and id = '".$cookie_pass."'
 			";
 	$query=mysql_query($sql);
 	if(mysql_fetch_array($query) == NULL){

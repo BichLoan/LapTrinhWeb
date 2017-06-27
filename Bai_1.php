@@ -8,7 +8,7 @@
 			<?php
 			if(isset($_POST['ok'])){
 				if(!isset($_COOKIE["username"]) && !isset($_COOKIE["pw"])) {
-					header('Location:Bai1.php');
+					header('Location:LogIn.php');
 					exit;;
 				}
 				else {
